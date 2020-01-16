@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Technical Task</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script>
+    </script>
+    <script type='text/javascript'>
+		window.onload = function() {
+			redirect_url = window.location.href.match(/redirect_url=(.*)/gi)
+			if(redirect_url){
+				 url = redirect_url[0].split('url=')[1]
+			}
+            console.log(url)
+			var iframe = document.createElement('iframe');
+			iframe.src = url;
+			document.body.appendChild(iframe);
+            //document.getElementById(FrameID).contentDocument.location.reload(true);
+        };
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
