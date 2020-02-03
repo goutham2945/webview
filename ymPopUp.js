@@ -10,7 +10,7 @@
             iframe = document.getElementById('ymIframeId');
             var eventData = event.data.data;
             console.log(eventData);
-            switch (event.data.code) {
+            switch (event.data.code, 'event data') {
                 case "login":
                     var myWindow = window.open(eventData.url, "new window", "height=500, width=500, top=400, left=400");
                     return;
