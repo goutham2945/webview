@@ -1,4 +1,5 @@
 (function () {
+    console.log('inside custom script')
     window.addEventListener("message", function (event) {
         try {
             event = JSON.parse(event.data);
